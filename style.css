@@ -1,10 +1,13 @@
 body {
-  background-image: url("herbbackground.jpg.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-image: url("backgroundplate.jpg.png");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
   margin: 0;
   padding: 0;
 }
@@ -14,6 +17,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 /* Navigation Bar */
@@ -72,7 +76,7 @@ body {
 /* Hover Effects */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: grey;
+  background-color: #5cb85c;
   color: #2c2c2c;
 }
 
@@ -86,4 +90,117 @@ body {
 
 #container1 {
   text-align: center;
+}
+
+/* Contact Page */
+
+.contact-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-image: url("herbbackground.jpg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  margin: 80px auto;
+  background-color: transparent;
+  opacity: 1;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #2c2c2c;
+}
+
+p {
+  text-align: center;
+}
+
+.contact-form,
+.newsletter-form {
+  margin-top: 20px;
+}
+
+.form {
+  margin-bottom: 15px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #f9f9f5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.form input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #5cb85c;
+  color: #f9f9f5;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #4cae4c;
+}
+
+/* Recipe Page */
+.recipe-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-image: url("recipebg.jpg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+/* CC Page */
+.comm-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-image: url("CCbackground.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }

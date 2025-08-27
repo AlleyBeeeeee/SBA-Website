@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <title>Recipe Submission</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="recipe-body">
     <div class="header-nav">
       <div class="navbar">
         <a href="index.html">Homepage</a>
@@ -26,6 +26,43 @@
 
         <a href="contact.html">Contact Us</a>
       </div>
+    </div>
+    <div class="container">
+      <h2 id="recipe-head">Submit Your Recipe!</h2>
+      <form action="#" method="post" class="contact-form">
+        <div class="form">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form">
+          <label for="recipe-name">Recipe Name:</label>
+          <input type="text" id="recipe-name" name="recipe-name" required />
+        </div>
+        <div class="form">
+          <label for="recipe-text"
+            >Recipe (or you can upload a file below):</label
+          >
+          <textarea
+            id="recipe-text"
+            name="recipe-text"
+            placeholder="Type your recipe here..."
+            required
+          ></textarea>
+        </div>
+        <div class="form">
+          <label for="recipe-file">Upload a Recipe File:</label>
+          <input type="file" id="recipe-file" name="recipe-file" />
+        </div>
+        <div class="form">
+          <label for="picture">Picture Upload:</label>
+          <input type="file" id="picture" name="picture" accept="image/*" />
+        </div>
+        <input type="submit" value="Submit Recipe" />
+      </form>
     </div>
   </body>
 </html>
