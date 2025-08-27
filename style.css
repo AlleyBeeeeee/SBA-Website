@@ -4,12 +4,11 @@ body {
   align-items: center;
   justify-content: center;
   font-family: Arial, sans-serif;
-  background-image: url("backgroundplate.jpg.png");
+  background-image: url("backgroundplate.png");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
+  background-color: #f5d349;
 }
 
 /* container for nav bar */
@@ -99,16 +98,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: Arial, sans-serif;
-  background-image: url("herbbackground.jpg.png");
+  font-family: "Oswald", sans-serif;
+  background-image: url("herbbackground.png");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
-.container {
-  max-width: 400px;
+.contact-container {
+  width: 30%;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
@@ -139,7 +139,6 @@ p {
 .form label {
   display: block;
   margin-bottom: 5px;
-  font-weight: bold;
 }
 
 .form input[type="text"],
@@ -162,8 +161,8 @@ p {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #5cb85c;
-  color: #f9f9f5;
+  background-color: darkgrey;
+  color: black;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -172,7 +171,17 @@ p {
 }
 
 .form input[type="submit"]:hover {
-  background-color: #4cae4c;
+  background-color: white;
+}
+
+.form-container {
+  width: 25%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  margin: 80px auto;
+  background-color: transparent;
+  opacity: 1;
 }
 
 /* Recipe Page */
@@ -181,8 +190,8 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: Arial, sans-serif;
-  background-image: url("recipebg.jpg.png");
+  font-family: "Oswald", sans-serif;
+  background-image: url("recipebg.png");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -196,11 +205,47 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: Arial, sans-serif;
+  font-family: "Oswald", sans-serif;
   background-image: url("CCbackground.png");
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: auto;
+}
+
+.row-container {
+  width: 25%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  margin: 80px auto;
+  background-color: transparent;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.fav-container {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  margin: 80px auto;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.try-container {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  margin: 80px auto;
+  background-color: transparent;
+  opacity: 1;
 }
