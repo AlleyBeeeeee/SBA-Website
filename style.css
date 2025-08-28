@@ -4,7 +4,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   font-family: "Inter", sans-serif;
-  background-image: url("backgroundplate.png");
+  background-image: url("images/backgroundplate.png");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -138,6 +138,16 @@ a {
   box-sizing: border-box;
 }
 
+.row-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
 .fav-container,
 .try-container {
   width: 90%;
@@ -162,13 +172,12 @@ section .row-container {
 
 .recipe-row {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
   flex-wrap: wrap;
-  gap: 10px;
-  width: 100%;
-  margin-top: 10px;
 }
 
 .recipe-card {
@@ -188,6 +197,7 @@ section .row-container {
 .recipe-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
 }
 
 .recipe-card img {
@@ -227,7 +237,9 @@ section .row-container {
   border-collapse: collapse;
   margin-top: 20px;
 }
-
+.recipelink {
+  text-decoration: underline;
+}
 .table-container th,
 .table-container td {
   padding: 12px 15px;
@@ -261,7 +273,7 @@ section .row-container {
   align-items: center;
   justify-content: center;
   font-family: "Oswald", sans-serif;
-  background-image: url("recipebg.png");
+  background-image: url("images/recipebg.png");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -332,7 +344,7 @@ section .row-container {
   align-items: center;
   justify-content: center;
   font-family: "Oswald", sans-serif;
-  background-image: url("CCbackground.png");
+  background-image: url("images/CCbackground.png");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -351,7 +363,7 @@ section .row-container {
   align-items: center;
   justify-content: center;
   font-family: "Oswald", sans-serif;
-  background-image: url("herbbackground.png");
+  background-image: url("images/herbbackground.png");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
