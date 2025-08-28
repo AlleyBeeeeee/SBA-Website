@@ -4,17 +4,31 @@ body {
   align-items: center;
   justify-content: flex-start;
   font-family: "Inter", sans-serif;
-  background-image: url("images/backgroundplate.png");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f8f4e6;
-  min-height: 100vh;
   margin: 0;
   padding: 0;
   color: #2c2c2c;
   line-height: 1.6;
+}
+
+.home-body {
+  background-image: url("./images/backgroundplate.png");
+}
+
+.recipe-body {
+  background-image: url("./images/recipebg.png");
+}
+
+.comm-body {
+  background-image: url("./images/CCbackground.png");
+}
+
+.contact-body {
+  background-image: url("./images/herbbackground.png");
 }
 
 h1,
@@ -148,7 +162,24 @@ a {
   margin: 20px auto;
   flex-wrap: wrap;
 }
-.fav-container,
+
+.fav-container {
+  width: 90%;
+  max-width: 1000px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  margin: 60px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .try-container {
   width: 90%;
   max-width: 1000px;
@@ -267,23 +298,6 @@ section .row-container {
 }
 
 /* ======================== Recipe Submission Page ======================== */
-.recipe-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Oswald", sans-serif;
-  background-image: url("images/recipebg.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f8f4e6;
-  width: 100%;
-  margin: 10px;
-  padding: 10;
-  color: #2c2c2c;
-}
 
 .form-container {
   width: 90%;
@@ -337,43 +351,7 @@ section .row-container {
   transform: scale(1.02);
 }
 
-/* ======================== Culinary Community Page ======================== */
-.comm-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Oswald", sans-serif;
-  background-image: url("images/CCbackground.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f8f4e6;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  color: #2c2c2c;
-}
-
 /* ======================== Contact Us Page  ======================== */
-.contact-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Oswald", sans-serif;
-  background-image: url("images/herbbackground.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f8f4e6;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  color: #2c2c2c;
-}
 
 .contact-container {
   width: 90%;
@@ -385,7 +363,24 @@ section .row-container {
   background-color: rgba(255, 255, 255, 0.95);
   text-align: center;
 }
-
+.recipe-body,
+.comm-body,
+.contact-body,
+.home-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f8f4e6;
+  width: 100%;
+  margin: 10px;
+  padding: 10;
+  color: #2c2c2c;
+}
 /* Footer*/
 footer {
   width: 100%;
