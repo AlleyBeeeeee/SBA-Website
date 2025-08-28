@@ -7,92 +7,111 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header-nav">
-      <div class="navbar">
-        <a href="index.html">Homepage</a>
-        <div class="dropdown">
-          <button class="dropbtn">Recipes</button>
-          <div class="dropdown-content">
-            <a href="row.html">Recipe Submssion</a>
-            <a href="community.html"
-              >Culinary Catastrophe Picture Submissions</a
+    <main class="main-content">
+      <div class="header-nav">
+        <div class="navbar">
+          <a href="index.html">Homepage</a>
+          <div class="dropdown">
+            <button class="dropbtn">Recipes</button>
+            <div class="dropdown-content">
+              <a href="row.html">Recipe Submssion</a>
+              <a href="community.html"
+                >Culinary Community Picture Submissions</a
+              >
+            </div>
+          </div>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <section id="container1">
+        <h1 class="main-title">Herb Your Enthusiasm!</h1>
+        <h2 class="subtitle">The site where we Fudge, not Judge!</h2>
+      </section>
+
+      <section class="row-container">
+        <div class="recipe-card">
+          <h1>Recipe of the Week!</h1>
+          <a
+            href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
+            target="_blank"
+          >
+            <img src="bestcookie.jpg" alt="Chocolate chip cookies" />
+            <span>Joy Food Sunshine Chocolate Chip Cookies</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="fav-container">
+        <h1>Favorite Recipes</h1>
+        <div class="recipe-row">
+          <div class="recipe-card">
+            <a href="https://themom100.com/recipe/pernil/" target="_blank">
+              <img src="pernil.jpg" alt="Pernil (Roast Pork)" />
+              <span>Best Roast Pork (Pernil) Recipe</span>
+            </a>
+          </div>
+          <div class="recipe-card">
+            <a
+              href="https://tastesbetterfromscratch.com/homemade-spaghetti-sauce/"
+              target="_blank"
             >
+              <img src="spaghettisauce.jpg" alt="Homemade spaghetti sauce" />
+              <span>Best Homemade Tomato Sauce</span>
+            </a>
+          </div>
+          <div class="recipe-card">
+            <a
+              href="https://whatsgabycooking.com/classic-italian-tiramisu/"
+              target="_blank"
+            >
+              <img src="tiramisu.jpg" alt="Tiramisu dessert" />
+              <span>Best Tiramisu Recipe</span>
+            </a>
           </div>
         </div>
-        <a href="contact.html">Contact Us</a>
-      </div>
-    </div>
-    <div id="container1">
-      <h1
-        style="
-          font-family: 'Oswald', sans-serif;
-          font-weight: bold;
-          color: #2c2c2c;
-          font-size: 75pt;
-        "
-      >
-        Herb Your Enthusiam!
-      </h1>
-      <h2>The site where we Fudge, not Judge!</h2>
-    </div>
-    <div class="row-container">
-      <h1>Recipe of the Week!</h1>
-      <a
-        href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
-        ><img src="bestcookie.jpg" alt="Cookies" style="width: 100%" />Joy Food
-        Sunshine Chocolate Chip Cookies</a
-      >
-    </div>
-    <div class="fav-container">
-      <div class="fav">
-        <a
-          href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
-          ><img src="bestcookie.jpg" alt="Cookies" style="width: 100%" />Joy
-          Food Sunshine Chocolate Chip Cookies</a
-        >
-      </div class="fav">
-      <a
-        href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
-        ><img src="bestcookie.jpg" alt="Cookies" style="width: 100%" />Joy Food
-        Sunshine Chocolate Chip Cookies</a
-      >
-      <div class="fav">
-        <a
-          href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
-          ><img src="bestcookie.jpg" alt="Cookies" style="width: 100%" />Joy
-          Food Sunshine Chocolate Chip Cookies</a
-        >
-      </div>
-    </div>
+      </section>
 
-    <div class="try-container">
-      <div class="try">
-        <a
-          href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
-          ><img src="bestcookie.jpg" alt="Cookies" style="width: 100%" />Joy
-          Food Sunshine Chocolate Chip Cookies</a
-        >
-      </div>
-      <div class="try">
-        <a
-          href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
-          ><img src="bestcookie.jpg" alt="Cookies" style="width: 100%" />Joy
-          Food Sunshine Chocolate Chip Cookies</a
-        >
-      </div>
-      <div class="try">
-        <a
-          href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
-          ><img src="bestcookie.jpg" alt="Cookies" style="width: 100%" />Joy
-          Food Sunshine Chocolate Chip Cookies</a
-        >
-      </div>
-    </div>
+      <section class="try-container">
+        <h1>Try at your Own Risk Recipes</h1>
+        <div class="recipe-row">
+          <div class="recipe-card">
+            <a
+              href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
+              target="_blank"
+            >
+              <img src="bestcookie.jpg" alt="Chocolate chip cookies" />
+              <span>Joy Food Sunshine Chocolate Chip Cookies</span>
+            </a>
+          </div>
+          <div class="recipe-card">
+            <a
+              href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
+              target="_blank"
+            >
+              <img src="bestcookie.jpg" alt="Chocolate chip cookies" />
+              <span>Joy Food Sunshine Chocolate Chip Cookies</span>
+            </a>
+          </div>
+          <div class="recipe-card">
+            <a
+              href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
+              target="_blank"
+            >
+              <img src="bestcookie.jpg" alt="Chocolate chip cookies" />
+              <span>Joy Food Sunshine Chocolate Chip Cookies</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Herb Your Enthusiasm. All rights reserved.</p>
+    </footer>
   </body>
 </html>
