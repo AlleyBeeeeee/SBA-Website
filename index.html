@@ -11,142 +11,193 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      #container1 {
+        width: 100%;
+        text-align: center;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-content: center;
+      }
+      .subtitle {
+        font-size: 25pt;
+        font-weight: 500;
+        color: white;
+        background-color: black;
+        font-style: italic;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.07);
+        width: 50%;
+      }
+      .fudge-img {
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+      }
+      .main-title {
+        font-size: 75pt;
+        font-weight: bold;
+      }
+    </style>
   </head>
-     <div class="header-nav">
-      <div class="navbar">
-        <a href="index.html">Homepage</a>
-        <div class="dropdown">
-          <button class="dropbtn">Recipes</button>
-          <div class="dropdown-content">
-            <a href="row.html">Recipe Submssion</a>
-            <a href="community.html">Culinary Community Picture Submissions</a>
-          </div>
+  <div class="header-nav">
+    <div class="navbar">
+      <a href="index.html">Homepage</a>
+      <div class="dropdown">
+        <button class="dropbtn">Recipes</button>
+        <div class="dropdown-content">
+          <a href="row.html">Recipe Submssion</a>
+          <a href="community.html">Culinary Community Picture Submissions</a>
         </div>
-        <a href="contact.html">Contact Us</a>
+      </div>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+
+  <body class="home-body">
+    <section id="container1">
+      <h1 class="main-title">Herb Your Enthusiasm!</h1>
+      <h2 class="subtitle">The site where we <u>Fudge</u>, not Judge!</h2>
+      <img
+        class="fudge-img"
+        src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3BnYXpibDlrMmx2Z3EwYzJhZ3k3cDVsdDEwbWR1cTMzdTk3ZHFyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VdQ8b54TJZ9kXClaSw/giphy.gif"
+        alt=""
+      />
+    </section>
+    <div class="fav-container">
+      <div class="row">
+        <div class="recipe-card">
+          <h1>Recipe of the Week!</h1>
+          <a
+            href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
+            target="_blank"
+          >
+            <img src="images/bestcookie.jpg" alt="Chocolate chip cookies" />
+            <span>Joy Food Sunshine Chocolate Chip Cookies</span>
+          </a>
+        </div>
+      </div>
+      <div class="table-container">
+        <h1>Recent Recipe Submissions</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Recipe Name</th>
+              <th>Submitted By</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a
+                  class="recipelink"
+                  href="https://tastesbetterfromscratch.com/spicy-chili//"
+                  target="_blank"
+                >
+                  Spicy Chili
+                </a>
+              </td>
+              <td>Bandit</td>
+              <td>2025-08-20</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  class="recipelink"
+                  href="https://www.thewholesomedish.com/the-best-classic-lasagna/"
+                  target="_blank"
+                >
+                  Classic Lasagna
+                </a>
+              </td>
+              <td>Bluey</td>
+              <td>2025-08-18</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  class="recipelink"
+                  href="https://preppykitchen.com/lemon-bars/"
+                  target="_blank"
+                  >Lemon Bars</a
+                >
+              </td>
+              <td>Bingo</td>
+              <td>2025-08-15</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
+    <section class="fav-container">
+      <h1>Favorite Recipes</h1>
+      <div class="recipe-row">
+        <div class="recipe-card">
+          <a href="https://themom100.com/recipe/pernil/" target="_blank">
+            <img src="images/pernil.jpg" alt="Pernil (Roast Pork)" />
+            <span>Best Roast Pork (Pernil) Recipe</span>
+          </a>
+        </div>
+        <div class="recipe-card">
+          <a
+            href="https://tastesbetterfromscratch.com/homemade-spaghetti-sauce/"
+            target="_blank"
+          >
+            <img
+              src="images/spaghettisauce.jpg"
+              alt="Homemade spaghetti sauce"
+            />
+            <span>Best Homemade Tomato Sauce</span>
+          </a>
+        </div>
+        <div class="recipe-card">
+          <a
+            href="https://whatsgabycooking.com/classic-italian-tiramisu/"
+            target="_blank"
+          >
+            <img src="images/tiramisu.jpg" alt="Tiramisu dessert" />
+            <span>Best Tiramisu Recipe</span>
+          </a>
+        </div>
       </div>
-      <body class="home-body">
-      </body>
-      <section id="container1">
-        <h1 class="main-title">Herb Your Enthusiasm!</h1>
-        <h2 class="subtitle">The site where we Fudge, not Judge!</h2>
-      </section>
-<div class="fav-container">
-  <div class="row">
-  <div class="recipe-card">
-    <h1>Recipe of the Week!</h1>
-    <a href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/" target="_blank">
-      <img src="images/bestcookie.jpg" alt="Chocolate chip cookies" />
-      <span>Joy Food Sunshine Chocolate Chip Cookies</span>
-    </a></div>
-  </div>
+    </section>
 
-  <div class="table-container">
-    <h1>Recent Recipe Submissions</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Recipe Name</th>
-          <th>Submitted By</th>
-          <th>Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <a class="recipelink" href="https://tastesbetterfromscratch.com/spicy-chili//" target="_blank">
-              Spicy Chili
-            </a>
-          </td>
-          <td>Bandit</td>
-          <td>2025-08-20</td>
-        </tr>
-        <tr>
-          <td>
-            <a class="recipelink" href="https://www.thewholesomedish.com/the-best-classic-lasagna/" target="_blank">
-              Classic Lasagna
-            </a>
-          </td>
-          <td>Bluey</td>
-          <td>2025-08-18</td>
-        </tr>
-        <tr>
-          <td>
-            <a class="recipelink" href="https://preppykitchen.com/lemon-bars/" target="_blank">Lemon Bars</a>
-          </td>
-          <td>Bingo</td>
-          <td>2025-08-15</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-      <section class="fav-container">
-        <h1>Favorite Recipes</h1>
-        <div class="recipe-row">
-          <div class="recipe-card">
-            <a href="https://themom100.com/recipe/pernil/" target="_blank">
-              <img src="images/pernil.jpg" alt="Pernil (Roast Pork)" />
-              <span>Best Roast Pork (Pernil) Recipe</span>
-            </a>
-          </div>
-          <div class="recipe-card">
-            <a
-              href="https://tastesbetterfromscratch.com/homemade-spaghetti-sauce/"
-              target="_blank"
-            >
-              <img src="images/spaghettisauce.jpg" alt="Homemade spaghetti sauce" />
-              <span>Best Homemade Tomato Sauce</span>
-            </a>
-          </div>
-          <div class="recipe-card">
-            <a
-              href="https://whatsgabycooking.com/classic-italian-tiramisu/"
-              target="_blank"
-            >
-              <img src="images/tiramisu.jpg" alt="Tiramisu dessert" />
-              <span>Best Tiramisu Recipe</span>
-            </a>
-          </div>
+    <section class="try-container">
+      <h1>Try at your Own Risk Recipes</h1>
+      <div class="recipe-row">
+        <div class="recipe-card">
+          <a
+            href="https://mayaskitchendaydreams.com/super-easy-lemon-souffles-for-two/"
+            target="_blank"
+          >
+            <img src="images/souffle.jpg" alt="Lemon Souffles Recipe" />
+            <span>Lemon Souffle Recipe</span>
+          </a>
         </div>
-      </section>
-
-      <section class="try-container">
-        <h1>Try at your Own Risk Recipes</h1>
-        <div class="recipe-row">
-          <div class="recipe-card">
-            <a
-              href="https://mayaskitchendaydreams.com/super-easy-lemon-souffles-for-two/"
-              target="_blank"
-            >
-              <img src="images/souffle.jpg" alt="Lemon Souffles Recipe" />
-              <span>Lemon Souffle Recipe</span>
-            </a>
-          </div>
-          <div class="recipe-card">
-            <a
-              href="https://www.thekitchn.com/beef-wellington-recipe-23280651"
-              target="_blank"
-            >
-              <img src="images/beefwell.jpg" alt="Beef Wellington" />
-              <span>Beef Wellington</span>
-            </a>
-          </div>
-          <div class="recipe-card">
-            <a
-              href="https://lacuisinedegeraldine.fr/en/homemade-croissants"
-              target="_blank"
-            >
-              <img src="images/crossaints.jpg" alt="Crossaints" />
-              <span>French Crossaint Recipe</span>
-            </a>
-          </div>
+        <div class="recipe-card">
+          <a
+            href="https://www.thekitchn.com/beef-wellington-recipe-23280651"
+            target="_blank"
+          >
+            <img src="images/beefwell.jpg" alt="Beef Wellington" />
+            <span>Beef Wellington</span>
+          </a>
         </div>
-      </section>
-    </main>
+        <div class="recipe-card">
+          <a
+            href="https://lacuisinedegeraldine.fr/en/homemade-croissants"
+            target="_blank"
+          >
+            <img src="images/crossaints.jpg" alt="Crossaints" />
+            <span>French Crossaint Recipe</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <p>&copy; 2025 Herb Your Enthusiasm. All rights reserved.</p>
     </footer>
